@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Mi primer sitio web</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-   <header>
-       <h1>Hola Estudiantes de programación web</h1>
-   </header>
+    <header>
+        <h1>Hola Estudiantes de programación web</h1>
+    </header>
 
-   <section>
-       <atricle>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-       <br>
-       Officia non tempore quasi dignissimos reiciendis illum molestias iste rem recusandae dolorem.</atricle>
-       <atricle>Temporibus earum laboriosam consequuntur nihil aspernatur architecto, vero nobis obcaecati pariatur ipsam, atque quam assumenda eaque illo ab aperiam. Ad?</atricle>
-       <atricle>Pariatur inventore, maiores. Ad excepturi, earum. Fugit est, recusandae voluptatibus nisi magni doloremque nesciunt aut, repellendus voluptate, ipsam, nostrum fuga.</atricle>
-   </section>
+    <div class="alert alert-danger" role="alert">
+        Esta es una alerta usando bootstrap
+    </div>
 
 
+    <section class="container">
+        <atricle><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Officia non tempore quasi dignissimos reiciendis illum molestias iste rem recusandae dolorem.
+            </p>
+            </atricle>
+        <atricle><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Officia non tempore quasi dignissimos reiciendis illum molestias iste rem recusandae dolorem.
+            </p>
+            </atricle>
+                    <atricle><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Officia non tempore quasi dignissimos reiciendis illum molestias iste rem recusandae dolorem.
+            </p>
+            </atricle>
+    </section>
 
 
-   <aside>
-       <form action="" id="login">
-           <input type="text" name="user" id="user" placeholder="&#128100; Usuario" autofocus required>
-           <input type="password" name="pass" id="pass" required placeholder="&#128273; Contraseña">
-           <input type="submit" value="Iniciar sesion">
-       </form>
-   </aside>
 
-   <footer>Hecho con <i>&#10084;</i> mis estudiantes</footer>
+
+    <aside>
+        <div>
+            <form action="" id="login" class="form-group">
+            <input type="text" name="user" id="user" class="form-control" placeholder="&#128100; Usuario" autofocus required>
+            <input type="password" name="pass" id="pass" class="form-control" required placeholder="&#128273; Contraseña">
+            <input type="submit" value="Iniciar sesion" class="btn btn-primary">
+        </form>
+        </div>
+    </aside>
+
+    <footer>Hecho con <i>&#10084;</i> mis estudiantes</footer>
 
 
 
 
     <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
