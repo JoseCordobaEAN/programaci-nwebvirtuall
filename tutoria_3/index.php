@@ -27,5 +27,7 @@
 
         <a href="ver_tareas.php"> Ver tareas</a>
     
+    <p>Este es un parrafo</p>
+    
 </body>
 </html>
