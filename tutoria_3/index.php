@@ -6,6 +6,10 @@
 </head>
 <body>
     
+    <?php
+        require('bd.php');
+    ?>
+
     <h2>Hola desde html</h2>
     <h2><?php 
         
@@ -20,6 +24,8 @@
         
         
         ?></h2>
+
+        <a href="ver_tareas.php"> Ver tareas</a>
     
 </body>
 </html>
