@@ -16,6 +16,8 @@
         
         echo 'la suma entre '.$entero.' y '. $flotantes. ' es '. ($entero + $flotantes);
         
+        echo $booleano;
+        
         
         ?></h2>
     
