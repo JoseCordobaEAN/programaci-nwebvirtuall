@@ -1,6 +1,6 @@
 <?php
 require('header.php');
-require('bd');
+require('bd.php');
 
 
 ?>

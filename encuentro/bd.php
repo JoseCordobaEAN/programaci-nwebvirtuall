@@ -5,4 +5,8 @@ $userBD = 'server';
 $passBD = 'server';
 $BD = 'usuario';
 
-$conexion = mysqli_connect($hostBD, $userBD, $passBD, $BD) or die('no hay conexion');
+try{
+    $conexion = mysqli_connect($hostBD, $userBD, $passBD, $BD) or die('no hay conexion');
+}catch (Exception $e) {
+    echo 'paila no hay conexion';
+}
