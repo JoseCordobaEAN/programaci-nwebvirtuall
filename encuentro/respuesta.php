@@ -8,9 +8,9 @@ require('bd.php');
        <?php
         if (isset($_POST['usuario']) && isset($_POST['pass'])){
 
-            $query = "INSERT INTO 'usuario' ( 'nombre', 'contrasena') VALUES ('".$_POST['usuario']."', '".$_POST['pass']."')";
+            $query = "INSERT INTO usuario ( nombre, contrasena) VALUES ('".$_POST['usuario']."', '".$_POST['pass']."')";
 
-            echo $conexion;
+            echo $query;
 
             if ($conexion -> query($query)){
                 echo '<br>Se Insertó el usuario';
