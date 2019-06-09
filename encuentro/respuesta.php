@@ -34,9 +34,12 @@ require('bd.php');
             <th scope="col">ID</th>
             <th scope="col">NOMBRE</th>
             <th scope="col">CONTRASEÑA</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
         </tr>
     </thead>
     <tbody>
+
         <?php
 
         $query = 'SELECT * FROM usuario';
@@ -46,10 +49,18 @@ require('bd.php');
          if ($resultado->num_rows > 0) {
             while($row = $resultado->fetch_assoc()) {
                 echo '<tr>
+
                         <th scope="row">'.$row['id'].'</th>
                         <td>'.$row['id'].'</td>
                         <td>'.$row['nombre'].'</td>
                         <td>'.$row['contrasena'].'</td>
+                        <td><button type="button" class="btn btn-success">&#9998;</button></td>
+                        <td>
+                            <form action="delete.php?id='.$row['id'].'" method="get">
+                                <button type="submit" class="btn btn-danger">&#9003;</button>
+                            </form>
+                        </td>
+
                     </tr>';
             }
         } else {
