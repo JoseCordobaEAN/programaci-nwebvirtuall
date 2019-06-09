@@ -43,8 +43,8 @@ require('bd.php');
 
         $resultado = $conexion -> query($query);
 
-         if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
+         if ($resultado->num_rows > 0) {
+            while($row = $resultado->fetch_assoc()) {
                 echo '<tr>
                         <th scope="row">'.$row['id'].'</th>
                         <td>'.$row['id'].'</td>
