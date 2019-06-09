@@ -17,7 +17,7 @@ if (isset($_GET['id'])){
 ?>
 
 <br>
-<a href="index.php">Regresar</a>
+<a href="respuesta.php">Regresar</a>
 
 <?php
 include('footer.php');
