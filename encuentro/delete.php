@@ -3,7 +3,7 @@
 include('header.php');
 
 if (isset($_GET['id'])){
-    $query = 'DELETE FROM usuario WHERE id = '.$_GET['id']);
+    $query = 'DELETE FROM usuario WHERE id = '.$_GET['id'];
 
     require('bd.php');
 
