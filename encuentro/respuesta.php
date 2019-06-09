@@ -54,12 +54,8 @@ require('bd.php');
                         <td>'.$row['contrasena'].'</td>
                         <td><button type="button" class="btn btn-success">&#9998;</button></td>
                         <td>
-                        <a href="delete.php?id='.$row['id'].'" class="btn btn-danger" >   &#9003;   </a>
-                        <!--
-                            <form action="delete.php?id='.$row['id'].'" method="get">
-                                <button type="submit" class="btn btn-danger">&#9003;</button>
-                            </form>
-                        </td> >
+                            <a href="delete.php?id='.$row['id'].'" class="btn btn-danger" >   &#9003;   </a>
+                        </td>
 
                     </tr>';
             }
