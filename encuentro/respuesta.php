@@ -7,13 +7,15 @@ require('bd.php');
     <p>
        <?php
         if (isset($_POST['usuario']) && isset($_POST['pass'])){
+
             $query = "INSERT INTO 'usuario' ( 'nombre', 'contrasena') VALUES ('".$_POST['usuario']."', '".$_POST['pass']."')";
-            echo $query;
+
+            echo $conexion;
 
             if ($conexion -> query($query)){
-                echo 'Se Insertó el usuario';
+                echo '<br>Se Insertó el usuario';
             }else{
-                echo 'paila';
+                echo '<br>paila';
             }
 
 
